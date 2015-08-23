@@ -93,7 +93,6 @@ class PaymentTransaction(models.Model):
     )
 
     date = models.DateTimeField(
-        auto_now=True,
         auto_now_add=True,
         verbose_name=_('Time'),
     )

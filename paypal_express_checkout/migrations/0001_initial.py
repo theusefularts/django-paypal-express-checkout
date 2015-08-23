@@ -22,7 +22,7 @@ class Migration(SchemaMigration):
         db.create_table('paypal_express_checkout_paymenttransaction', (
             ('id', self.gf('django.db.models.fields.AutoField')(primary_key=True)),
             ('user', self.gf('django.db.models.fields.related.ForeignKey')(to=orm['auth.User'])),
-            ('date', self.gf('django.db.models.fields.DateTimeField')(auto_now=True, auto_now_add=True, blank=True)),
+            ('date', self.gf('django.db.models.fields.DateTimeField')(auto_now_add=True, blank=True)),
             ('transaction_id', self.gf('django.db.models.fields.CharField')(max_length=32)),
             ('value', self.gf('django.db.models.fields.DecimalField')(max_digits=8, decimal_places=2)),
             ('status', self.gf('django.db.models.fields.CharField')(max_length=16)),
