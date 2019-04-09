@@ -67,11 +67,6 @@ class PaymentTransaction(models.Model):
     :status: The status of the transaction.
 
     """
-    user = models.ForeignKey(
-        settings.AUTH_USER_MODEL,
-        verbose_name=_('User'),
-    )
-
     content_type = models.ForeignKey(
         ContentType,
         blank=True, null=True,
